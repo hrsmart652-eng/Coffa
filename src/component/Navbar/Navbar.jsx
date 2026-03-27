@@ -9,7 +9,7 @@ export default function Navbar() {
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'ar' : 'en';
     i18n.changeLanguage(newLang);
-    // ضبط اتجاه الصفحة: RTL للعربي و LTR للإنجليزي
+    
     document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = newLang;
   };
@@ -18,9 +18,8 @@ export default function Navbar() {
     <nav className="navbar navbar-dark navbar-expand-lg text-capitalize w-100 px-lg-5 position-absolute top-0 start-0 z-3 py-4 bg-transparent">
       <div className="container-fluid">
 
-        {/* اللوجو - بيترجم برضه لو حبيتي */}
         <Link className="navbar-brand d-flex align-items-center gap-2 fw-bold fs-3 text-uppercase" to="/">
-          {/* الأيقونة - اللوجو */}
+         
           <img
             src={icone}
             alt="Coffee Logo"
@@ -28,7 +27,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* زرار الموبايل */}
+       
         <button
           className="navbar-toggler"
           type="button"
@@ -39,7 +38,7 @@ export default function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent" >
-          {/* اللينكات */}
+          
           <ul className="navbar-nav  mb-2 mb-lg-0 fw-medium align-items-center">
             <li className="nav-item">
               <Link className="nav-link active" to="/">{t('nav_home')}</Link>
@@ -57,7 +56,7 @@ export default function Navbar() {
               <Link className="nav-link" to="/login">{t('nav_login')}</Link>
             </li>
 
-            {/* زرار تغيير اللغة - حطيته جوه الـ list عشان يفضل متنظم */}
+        
             <li className="nav-item ms-lg-4 mt-3 mt-lg-0">
               <button
                 onClick={toggleLanguage}

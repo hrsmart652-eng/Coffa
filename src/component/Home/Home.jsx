@@ -42,7 +42,6 @@ export default function Home() {
     { id: 3, name: "John Doe", text: "ipsum dolor sit amet, consectetur adipisicing  dolor sit amet, consectetur adipisicing elit,Lorem ipsum  amet, consectetur adipisicing elit,Lorem ipstur adipisicing elit, epresso!", rating: 5 },
     { id: 4, name: "Mona Hassan", text: "QuickLorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sitpsum dolor sit  adipisicingr sit   dolor sit amet, consectetur adipisicing elit,ns. Perfect!", rating: 5 },
   ];
-  const currentYear = new Date().getFullYear();
 
 
   return (
@@ -400,12 +399,12 @@ export default function Home() {
         <div className="container py-5">
           <div className="row g-4">
 
-            {/* اللوجو */}
+            
             <div className="col-lg-2 col-md-12 mb-4">
               <Link to="/" className="footer-logo text-decoration-none">COFFEE</Link>
             </div>
 
-            {/* قسم الخصوصية */}
+            
             <div className="col-lg-2 col-md-4 col-6">
               <h6 className="footer-title">{t('footer_privacy_title')}</h6>
               <ul className="list-unstyled footer-links">
@@ -415,7 +414,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* قسم الخدمات */}
+            
             <div className="col-lg-2 col-md-4 col-6">
               <h6 className="footer-title">{t('footer_services_title')}</h6>
               <ul className="list-unstyled footer-links">
@@ -425,7 +424,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* قسم من نحن */}
+            
             <div className="col-lg-2 col-md-4 col-6">
               <h6 className="footer-title">{t('footer_about_title')}</h6>
               <ul className="list-unstyled footer-links">
@@ -435,7 +434,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* قسم المعلومات */}
+           
             <div className="col-lg-2 col-md-4 col-6">
               <h6 className="footer-title">{t('footer_info_title')}</h6>
               <ul className="list-unstyled footer-links">
@@ -445,7 +444,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* التواصل الاجتماعي */}
+          
             <div className="col-lg-2 col-md-4 col-12">
               <h6 className="footer-title">{t('footer_social_title')}</h6>
               <div className="d-flex gap-3 social-icons">
